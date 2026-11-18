@@ -1,6 +1,7 @@
 # rvlogy.com
 
 Website for **RVlogy: RV Travel Map**, the iOS app by Crystal RV Rentals.
+Live on the App Store since Nov 18, 2026: https://apps.apple.com/us/app/rvlogy-rv-travel-map/id6836141875
 
 - `/` home page
 - `/support/` support (App Store support URL)
