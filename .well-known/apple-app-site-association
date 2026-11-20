@@ -1,0 +1,10 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["WYL2U92B56.com.mikhailkryukov.rvstops"],
+        "components": [ { "/": "/s/*", "comment": "Shared RVlogy stops" } ]
+      }
+    ]
+  }
+}

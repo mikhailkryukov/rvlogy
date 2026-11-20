@@ -1,0 +1,38 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RV stop on RVlogy</title><meta name="description" content="An RV stop shared from RVlogy: dump stations, propane, campgrounds and more.">
+<meta name="apple-itunes-app" content="app-id=6836141875">
+<meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="stylesheet" href="/style.css">
+<style>.stop{max-width:560px;margin:40px auto 56px;text-align:center}.stop .kind{color:var(--muted);margin:0 0 18px}
+.stop h1{font-size:30px;margin:14px 0 4px}.btns{display:flex;flex-direction:column;gap:12px;align-items:center;margin:26px 0}
+.btn{display:inline-block;min-width:240px;padding:13px 22px;border-radius:12px;font-weight:600;text-decoration:none;background:var(--green);color:#fff}
+.btn.alt{background:#fff;color:var(--ink);border:1px solid var(--line)}.hint{color:var(--muted);font-size:15px}</style>
+</head><body>
+<header class="top"><div class="wrap"><a class="brand" href="/"><img src="/img/icon.png" alt="">RVlogy</a>
+<nav><a href="https://apps.apple.com/us/app/rvlogy-rv-travel-map/id6836141875">App Store</a><a href="/support/">Support</a></nav></div></header>
+<main><div class="wrap"><div class="doc stop">
+<div style="font-size:54px" id="icon">📍</div>
+<h1 id="name">RV stop</h1><p class="kind" id="kind"></p>
+<div class="btns">
+<a class="btn" id="open" href="https://apps.apple.com/us/app/rvlogy-rv-travel-map/id6836141875">Get RVlogy (free)</a>
+<a class="btn alt" id="maps" href="#">Directions in Apple Maps</a>
+<a class="btn alt" id="gmaps" href="#">Google Maps</a>
+</div>
+<p class="hint">Don't have RVlogy? It's a free map of 53,000 dump stations, propane fills, campgrounds and more, kept honest by RVers. <a href="https://apps.apple.com/us/app/rvlogy-rv-travel-map/id6836141875">Get it on the App Store</a>.</p>
+</div></div></main>
+<footer><div class="wrap"><span>© 2026 Crystal RV Rentals · <a href="https://crystalrv.com">Rent an RV from Crystal RV</a></span><span><a href="/privacy/">Privacy</a></span></div></footer>
+<script>
+(function(){
+  var q=new URLSearchParams(location.search), n=q.get("n")||"RV stop", k=q.get("k")||"", y=parseFloat(q.get("y")), x=parseFloat(q.get("x"));
+  var kinds={d:["Dump station","🚽"],p:["Propane","🔥"],c:["Campground / RV park","🏕️"],w:["Fresh water","💧"],r:["Rest area","🅿️"],v:["RV / truck wash","🫧"],a:["Sight","🔭"]};
+  var kk=kinds[k]||["RV stop","📍"];
+  document.getElementById("name").textContent=n; document.getElementById("kind").textContent=kk[0];
+  document.getElementById("icon").textContent=kk[1]; document.title=n+" · RVlogy";
+  if(!isNaN(y)&&!isNaN(x)){
+    document.getElementById("maps").href="https://maps.apple.com/?daddr="+y+","+x+"&q="+encodeURIComponent(n);
+    document.getElementById("gmaps").href="https://www.google.com/maps/dir/?api=1&destination="+y+","+x;
+  } else { document.getElementById("maps").style.display="none"; document.getElementById("gmaps").style.display="none"; }
+  var m=document.querySelector('meta[name="apple-itunes-app"]'); m.content="app-id=6836141875, app-argument="+location.href;
+})();
+</script>
+</body></html>

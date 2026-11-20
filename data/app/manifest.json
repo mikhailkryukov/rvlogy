@@ -1,0 +1,6 @@
+{
+ "version": 20261120,
+ "places": "places-20261120.json",
+ "clearances": "clearances-20261120.json",
+ "minCount": 50000
+}
